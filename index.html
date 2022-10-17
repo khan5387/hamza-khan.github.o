@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>select</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+     
+      <select id="list">
+                <option value="-1">select</option>
+                <option value="pakistan">pakistan</option>
+                <option value="india">india</option>
+                <option value="afghanistan">afghanistan</option>
+                <option value="china">china</option>
+                <option value="bangladesh">bangladesh</option>
+      </select>
+              
+       <h2 id="result"></h2>
+      <script>
+            $(document).ready(function(){
+               $("#list").change(function(){
+                var item = $("#list").val();
+                if(item == "-1"){
+                    alert("please select an item");
+                }
+                else{
+                    $("#result").text("you are selected " + item);
+                }
+
+
+               });
+
+            });
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
